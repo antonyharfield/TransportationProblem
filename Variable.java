@@ -1,26 +1,20 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package transportationproblem;
-
 import java.util.Formatter;
 
 /**
  *
  * @author amjad
  */
-public class Variable {  
-        
+public class Variable {
+
     private int stock;
     private int required;
     private double value;
-    
+
     public Variable(){
         this.stock = 0;
         this.required = 0;
     }
-    
+
     public Variable(int stock, int required){
         this.stock = stock;
         this.required = required;
@@ -74,8 +68,8 @@ public class Variable {
         f.format("x[%d,%d]=%f", this.stock+1, this.required+1, this.value);
         return f.toString();
     }
-    
-    
 
-    
+
+
+
 }
