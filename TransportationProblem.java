@@ -12,9 +12,9 @@ public class TransportationProblem {
     // Problem
     int stockSize;
     int requiredSize;
-    double []required;
-    double []stock;
-    double [][]cost;
+    double[] stock;
+    double[] required;
+    double[][] cost;
 
     // Solution
     LinkedList<Variable> feasible = new LinkedList<Variable>();
@@ -244,7 +244,7 @@ public class TransportationProblem {
         // for the occupied cells
         double[] r = new double[stockSize];
         double[] k = new double[requiredSize];
-        double NOVALUE = -1;
+        double NOVALUE = Double.MAX_VALUE;
         Arrays.fill(r, NOVALUE);
         Arrays.fill(k, NOVALUE);
         r[0] = 0;
